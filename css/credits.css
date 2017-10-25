@@ -1,0 +1,19 @@
+body{
+    background: unset;
+    background-color: white;
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 75px;
+}
+.empty-spacer{
+    margin-bottom: 125px;
+}
+.ul-container{
+    margin: 0 auto;
+    width: 25%;
+}
+.credits-section{
+    padding-top: 0;
+    font: 14px/23px serif;
+}
