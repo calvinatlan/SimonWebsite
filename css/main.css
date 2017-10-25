@@ -33,3 +33,13 @@ iframe{
     padding-bottom: 50px;
     background-color: rgba(255,255,255,.5);
 }
+.section.videos{
+    padding-bottom: 10px;
+    overflow: scroll;
+}
+.section.videos .iframe-container{
+    width: 10000px;
+}
+.section.videos .iframe-container iframe{
+    width: 560px;
+}
