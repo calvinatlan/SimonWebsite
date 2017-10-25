@@ -1,0 +1,16 @@
+body{
+    background: url('../media/simon-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    height: 100px;
+    background-color: white;
+    border: 2px solid black;
+    margin-bottom: 500px;
+}
+.section{
+    height: 400px;
+    margin-bottom: 400px;
+    background-color: white;
+}
