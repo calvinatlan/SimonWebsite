@@ -53,7 +53,7 @@ span.subtitle{
     text-decoration: none;
     margin: 0 10px;
 }
-.header>.links>a:visited{
+.header>.links>a, .header>.links>a:visited{
     color: white;
 }
 .empty-spacer{
@@ -74,6 +74,10 @@ span.subtitle{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    line-height: 100px;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
 }
 .iframe-container{
     display: flex;
@@ -104,4 +108,7 @@ span.subtitle{
 }
 .section.videos .iframe-container iframe{
     width: 560px;
+}
+.section.contact{
+    text-align: center;
 }
