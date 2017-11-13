@@ -15,4 +15,8 @@ let setVideoLength = function(){
     section.style.width = (videoLength * (25)) + '%';
 };
 
-window.onload = main;
+window.addEventListener('DOMContentLoaded', main);
+
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+});

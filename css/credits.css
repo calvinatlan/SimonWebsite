@@ -1,6 +1,7 @@
 body{
-    background: unset;
-    background-color: white;
+    background: url('../media/simon-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 h2{
     text-transform: uppercase;
@@ -8,6 +9,9 @@ h2{
 }
 .empty-spacer{
     margin-bottom: 125px;
+}
+.top-container{
+    background-color: rgba(255,255,255,.5);
 }
 .ul-container{
     margin: 0 auto;
