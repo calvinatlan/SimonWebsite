@@ -9,9 +9,10 @@ let scrollHideHeader = function(){
 };
 
 let setVideoLength = function(){
-    let videoLength = document.querySelectorAll('.section.videos div iframe').length;
+    let videoLength = document.querySelectorAll('.section.videos div div').length;
+    console.log(videoLength);
     let section = document.querySelector('.section.videos .iframe-container');
-    section.style.width = (videoLength * (560 + 25)) + 'px';
+    section.style.width = (videoLength * (25)) + '%';
 };
 
 window.onload = main;
