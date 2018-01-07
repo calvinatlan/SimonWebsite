@@ -67,8 +67,7 @@ span.subtitle{
     font-size: 34px;
 }
 .main-video{
-    height: 600px;
-    width: auto;
+    height: 650px;
     margin: auto;
     margin-top: 2px;
     background-repeat: no-repeat;
@@ -89,6 +88,7 @@ span.subtitle{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 .section{
     background-color: white;
