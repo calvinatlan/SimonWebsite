@@ -73,12 +73,8 @@ let bindVideoClick = function(){
         let id = v.getAttribute('vimeoId');
         v.addEventListener('click', function(){
             let src = mainVideo.getAttribute('src');
-            console.log(src);
-            src = src.replace(/\d+/g,id);
-            console.log(src);
+            src = src.replace(/\d+/,id);
             mainVideo.setAttribute('src',src);
-            console.log('replacing with ' + id);
-            console.log(mainVideo);
         });
     });
 };
