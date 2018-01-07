@@ -15,6 +15,7 @@ h2{
     width: auto;
     padding-top: 45px;
     height: 450px;
+    margin-right: -115px;
 }
 #bio-inner{
     display: flex;
@@ -27,6 +28,10 @@ h2{
     display: flex;
     flex-direction: column;
 }
+.newspaper-style{
+    text-align: justify;
+    text-justify: inter-word;
+}
 iframe{
     width: 49%;
     height: 500px;
@@ -38,18 +43,23 @@ iframe{
     position: fixed;
     width: 100%;
     height: 75px;
-    background: url('../media/simon-bg.jpg');
+    background: url(../media/simon-bg.jpg);
     background-position: top center;
-    line-height: 25px;
     font-size: 30px;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 span.title{
     margin-left: 15px;
+    font-size: 35px;
+    width: 265px;
 }
 span.subtitle{
-    margin-left: 23.5px;
+    margin-left: 15px;
     font-size: 18px;
+    width: 265px;
 }
 .header>.links{
     position: fixed;
@@ -76,6 +86,10 @@ span.subtitle{
     text-align: center;
     font-weight: 700;
     font-size: 34px;
+    font-style: italic;
+}
+.author{
+    font-size: 25px;
 }
 .main-video{
     height: 650px;
@@ -100,6 +114,20 @@ span.subtitle{
     background-size: cover;
     background-position: center;
     cursor: pointer;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.iframe-container>div>span{
+    line-height: 50px;
+}
+.smaller{
+    font-size: 20px;
 }
 .section{
     background-color: white;
@@ -132,8 +160,27 @@ span.subtitle{
     display: block;
     margin: 10px auto;
 }
+.form-layout>input::placeholder{
+    font-family: 'Libre Baskerville', serif;
+}
+input[type=submit]{
+    font-family: 'Libre Baskerville', serif;
+}
+textarea{
+    display: block;
+    margin: 10px auto;
+    border: 1px solid black;
+    background: none;
+    outline: none;
+}
 #contact-input{
     width: 500px;
     height: 300px;
+}
+body>span{
+    display: block;
     text-align: center;
+    margin: 0 auto;
+    color: white;
+    padding: 15px 0;
 }
