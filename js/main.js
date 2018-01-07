@@ -74,6 +74,7 @@ let bindVideoClick = function(){
         v.addEventListener('click', function(){
             let src = mainVideo.getAttribute('src');
             src = src.replace(/\d+/,id);
+            src = src.replace(/autoplay=\d/,'autoplay=1');
             mainVideo.setAttribute('src',src);
         });
     });
