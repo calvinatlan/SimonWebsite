@@ -11,10 +11,21 @@ h2{
     text-align: center;
     padding-top: 20px;
 }
+#bio-pic{
+    width: auto;
+    padding-top: 45px;
+    height: 450px;
+}
+#bio-inner{
+    display: flex;
+    justify-content: space-around;
+}
 .p-container{
     width: 50%;
-    margin: 0 auto;
     padding: 25px 25px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
 }
 iframe{
     width: 49%;
@@ -110,5 +121,19 @@ span.subtitle{
     width: 560px;
 }
 .section.contact{
+    text-align: center;
+}
+.form-layout{
+    display: flex;
+    flex-direction: column;
+}
+.form-layout>input{
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+}
+#contact-input{
+    width: 500px;
+    height: 300px;
     text-align: center;
 }
