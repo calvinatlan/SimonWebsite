@@ -7,6 +7,9 @@ h2{
     text-transform: uppercase;
     margin-bottom: 75px;
 }
+h3{
+    font-size: 1.37em;
+}
 .empty-spacer{
     margin-bottom: 125px;
 }
@@ -20,5 +23,5 @@ h2{
 }
 .credits-section{
     padding-top: 0;
-    font: 14px/23px serif;
+    font: 18px/25px serif;
 }
