@@ -82,11 +82,11 @@
         </div>
         <div id="contact" class="section contact">
             <h2>Contact</h2>
-            <form>
+            <form name="email-form" method="post" action="send-email.php">
                 <div class="form-layout">
-                    <input type="text" placeholder="Contact Info" />
-                    <textarea id="contact-input"></textarea>
-                    <input type="submit" value="Send" disabled/>
+                    <input type="text" placeholder="Contact Info" name="contact-info" />
+                    <textarea id="contact-input" name="email-content"></textarea>
+                    <input type="submit" value="Send" />
                 </div>
             </form>
         </div>
