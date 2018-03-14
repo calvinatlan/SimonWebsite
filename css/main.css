@@ -50,11 +50,16 @@ iframe{
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: white;
 }
 span.title{
     margin-left: 15px;
     font-size: 35px;
     width: 265px;
+}
+span.title>a, span.subtitle>a{
+    color: white;
+    text-decoration: none;
 }
 span.subtitle{
     margin-left: 15px;
