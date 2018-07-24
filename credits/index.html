@@ -6,63 +6,95 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/credits.css">
+    <script>
+        window.creditsSource =
+`**Music Coordinator
+*Why We Fight – TV Series, 2017
+
+**Composer
+*Salt Man – Musical Theater, 2018
+*Space to Explore – Short Documentary (Additional Music), 2018
+*Greg and Jules Forever – Short Film, 2018
+*Toxic – Short Film, 2018
+*#blessed – Short Film, 2018
+*Queen of Shadows – Scenes, 2017
+*American Muscle – Short Film, 2017
+*Gameroom – Short Film, 2017
+*Alone in the Wilderness – Short Film, 2017
+*OUST – Short Film, 2017
+*Why We Fight – Emmy-Nominated TV Series (Additional Music), 2017
+*Tapun Sa Win – Short Film, 2017
+*Immortal Fist – Feature Film, 2017
+*Spacious 1 BR in Silverlake – Short Film, 2017
+*Short, Uninteresting Loser With a Shitty Job – Short Film, 2017
+*I Don’t Love You – Short Film, 2017
+*Bakla Ako – Short Film, 2017
+*Numbo Jumbo – Videogame, 2016
+*Amy’s Drive Thru – Commercial, 2015
+*Regis Art Gallery – Commercial, 2015
+*El Cacao – Short Film, 2015
+*Amélia Blume and the Cursed Heart of the Old, Old Woods – Videogame, 2015
+*Sedimental Storm – Videogame, 2015
+*Adaptation, Augmentation, Alliteration – UCSC Dance, 2015
+*Saviour or Sacrifice, Videogame – 2015
+
+**Arranger
+*Land of Woge – Children’s TV Series, 2017
+*Reverse Osmosis – USC Acappella, 2017
+*Something Inside is Broken – Musical Theater, 2016
+*Voices SF – Acappella, 2015-2017
+*Kingsborough – Rock Band, 2015-2016
+*Cloud 9 – UCSC Acappella, 2010-2014
+
+**Producer
+*Pirate Dan the Malformed – Spoken Word, 2015
+
+**Musical Director
+*Something Inside is Broken – Musical Theater, 2016
+*Cloud 9 Acappella – UC Santa Cruz, 2014
+`
+    </script>
 </head>
 <body>
-	<div class="header"><span class="title"><a href="/">Sim&#0243;n Wilson</a></span><span class="subtitle"><a href="/">Composer &#0149; Arranger</a></span>
+    <div class="header"><span class="title"><a href="/">Sim&#0243;n Wilson</a></span><span class="subtitle"><a href="/">Composer &#0149; Arranger</a></span>
     </div>
     <div class="top-container">
     <div class="empty-spacer"></div>
         <h2>Credits</h2>
         <div class="ul-container">
-	<h3>Music Coordinator</h3>
-    <div class="credits-section">
-        Why We Fight, TV Series, 2017
+        </div>
     </div>
-    <h3>Composer</h3>
-    <div class="credits-section">
-	Greg and Jules Forever, Short Film, 2018	
-	<br />Toxic, Short Film, 2018
-	<br />#blessed, Short Film, 2018
-        <br />Queen of Shadows, Scenes, 2017
-        <br /> American Muscle, Short Film, 2017
-        <br /> Gameroom, Short Film, 2017
-        <br /> Alone in the Woods, Short Film, 2017
-        <br /> OUST, Short Film, 2017
-        <br /> Why We Fight, TV Series, 2017
-        <br /> Tapun Sa Win, Short Film, 2017
-        <br /> Immortal Fist, Feature Film, 2017
-        <br /> Spacious 1 BR in Silverlake, Short Film, 2017
-        <br /> Short, Uninteresting Loser With a Shitty Job, Short Film, 2017
-        <br /> I Don’t Love You, Short Film, 2017
-        <br /> Bakla Ako, Short Film, 2017
-        <br /> Numbo Jumbo, Videogame, 2016
-        <br /> Amy’s Drive Thru, Commercial, 2015
-        <br /> Regis Art Gallery, Commercial, 2015
-        <br /> El Cacao, Short Film, 2015
-        <br /> Amélia Blume and the Cursed Heart of the Old, Old Woods, Videogame, 2015
-        <br /> Sedimental Storm, Videogame, 2015
-        <br /> Adaptation, Augmentation, Alliteration, UCSC Dance, 2015
-        <br /> Saviour or Sacrifice, Videogame, 2015
-    </div>
-<h3>Arranger</h3>
-    <div class="credits-section">
-        Land of Woge, Children’s TV Series, 2017
-        <br /> Reverse Osmosis, USC Acappella, 2017
-        <br /> Something Inside is Broken, Musical Theater, 2016
-        <br /> Voices SF, Acappella, 2015-2017
-        <br /> Kingsborough, Rock Band, 2015-2016
-        <br /> Cloud 9 Acappella, 2010-2014
-    </div>
-<h3>Producer</h3>
-    <div class="credits-section">
-        Pirate Dan the Malformed, Spoken Word, 2015
-    </div>
-<h3>Musical Director</h3>
-    <div class="credits-section">
-        Something Inside is Broken, Musical Theater, 2016
-        <br /> Cloud 9 Acappella, UC Santa Cruz, 2014
-    </div>
-    </div>
-    </div>
+    <script>
+        let sourceArr = window.creditsSource.split('\n');
+        let container = document.querySelector('.ul-container');
+        let runningContent = newCreditsUL();
+        sourceArr.map(e => {
+            let content = document.createElement('li');
+            if(e.match(/\*\*/)) {
+                content = document.createElement('li');
+                content.innerText = e.substr(2);
+                content.setAttribute('type', 'disc');
+            }else if(e.match(/\*/)) {
+                content = document.createElement('li');
+                content.setAttribute('type', 'circle');
+                let strArr = e.substr(1).split(' – ');
+                let leftHalf = document.createElement('i');
+                leftHalf.innerText = strArr[0];
+                let rightHalf = document.createElement('span');
+                rightHalf.innerText = ' - ' + strArr[1];
+                content.appendChild(leftHalf);
+                content.appendChild(rightHalf);
+            }else {
+                content = document.createElement('br');
+            }
+                runningContent.appendChild(content);
+        });
+        container.appendChild(runningContent);
+        function newCreditsUL(){
+            let div = document.createElement('ul');
+            div.classList.add('credits-section');
+            return div;
+        }
+    </script>
 </body>
 </html>

@@ -18,10 +18,13 @@ h3{
 }
 .ul-container{
     margin: 0 auto;
-    width: 35%;
+    width: 50%;
     padding-bottom: 100px;
 }
 .credits-section{
     padding-top: 0;
     font: 18px/25px serif;
+}
+li[type='circle']{
+    margin-left: 50px;
 }
