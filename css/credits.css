@@ -3,6 +3,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+h1 {
+	padding-top: 50px;
+}
 h2{
     text-transform: uppercase;
     margin-bottom: 75px;
@@ -23,7 +26,15 @@ h3{
 }
 .credits-section{
     padding-top: 0;
-    font: 18px/25px serif;
+    font: 18px/25px;
+}
+li {
+	line-height: 25px;
+	list-style-type: none;
+}
+li[type='disc']{
+	font-weight: 700;
+	margin-bottom: 7px;
 }
 li[type='circle']{
     margin-left: 50px;
