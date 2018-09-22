@@ -98,6 +98,13 @@ span.subtitle {
 .empty-spacer {
     margin-bottom: 100px;
 }
+.time-bender-header {
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px 0;
+    margin-top: 130px;
+    margin-bottom: -80px;
+}
 .quotes-section {
     color: white;
     margin: 130px auto;
