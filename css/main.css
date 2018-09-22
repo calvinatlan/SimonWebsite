@@ -12,15 +12,23 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.bio-pic-container {
+    flex-basis: 20%;
+}
 #bio-pic {
-    width: auto;
+    width: 100%;
     padding-top: 45px;
-    height: 450px;
-    margin-right: -115px;
+}
+#bio-pic.left {
+    margin-left: 10px;
+}
+#bio-pic.right {
+    margin-right: 10px;
 }
 #bio-inner {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .p-container {
     width: 50%;
@@ -28,6 +36,7 @@ h1 {
     padding-top: 0;
     display: flex;
     flex-direction: column;
+    flex-basis: 50%;
 }
 .newspaper-style {
 	margin-top: -15px;
