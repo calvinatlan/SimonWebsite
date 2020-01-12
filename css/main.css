@@ -98,7 +98,7 @@ span.subtitle {
 .empty-spacer {
     margin-bottom: 100px;
 }
-.time-bender-header {
+.promo-header {
     text-align: center;
     background-color: rgba(255,255,255,0.7);
     padding: 10px 0;
@@ -156,7 +156,7 @@ span.subtitle {
 .smaller {
     font-size: 16px;
 }
-#time-bender .smaller {
+.two-line .smaller {
     display: block;
     height: 24px;
 }
