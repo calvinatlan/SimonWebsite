@@ -154,6 +154,9 @@ span.subtitle {
 .iframe-container>div>span {
     line-height: 50px;
 }
+.section.videos>.iframe-container>div {
+    margin: 0 8.5px;
+}
 .bottom-secondary {
     position: absolute;
     bottom: 0;
@@ -178,6 +181,8 @@ span.subtitle {
 	font-family: Montserrat;
     height: 240px;
     padding: unset;
+    margin-bottom: 17px;
+    background-color: unset;
     overflow: scroll;
 }
 .section.videos .iframe-container {
