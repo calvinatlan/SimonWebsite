@@ -2,12 +2,24 @@
 main = function(){
     setVideoLength();
     scrollVideoSection();
+    getVideoThumbnails();
 };
 
 //TODO scroll down makes header transparent, use RXJS
 let scrollHideHeader = function(){
 
 };
+
+let getVideoThumbnails = async function() {
+    let videoContainers = document.querySelectorAll(".section.videos>.iframe-container>div");
+    videoContainers.forEach(async container => {
+        let vimeoId = container.getAttribute("vimeoId");
+        let thumbnailReq = await fetch("https://vimeo.com/api/v2/video/" + vimeoId + '.json');
+        let thumbnailJson = await thumbnailReq.json();
+        let thumbnailUrl = thumbnailJson[0].thumbnail_large;
+        container.style.backgroundImage = 'url(\'' + thumbnailUrl + '\')';
+    });
+}
 
 let setVideoLength = function(){
     let videoLength = document.querySelectorAll('.section.videos div div').length;

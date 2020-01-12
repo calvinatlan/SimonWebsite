@@ -137,6 +137,7 @@ span.subtitle {
 .iframe-container>div {
     width: 25%;
     height: 240px;
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -152,6 +153,12 @@ span.subtitle {
 }
 .iframe-container>div>span {
     line-height: 50px;
+}
+.bottom-secondary {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .smaller {
     font-size: 16px;
