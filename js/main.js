@@ -101,4 +101,3 @@ window.addEventListener("hashchange", function () {
 });
 
 bindVideoClick();
-
