@@ -154,7 +154,11 @@ span.subtitle {
     line-height: 50px;
 }
 .smaller {
-    font-size: 20px;
+    font-size: 16px;
+}
+#time-bender .smaller {
+    display: block;
+    height: 24px;
 }
 .section {
     background-color: white;
