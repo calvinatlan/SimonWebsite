@@ -64,6 +64,7 @@ iframe {
     flex-direction: column;
     text-align: center;
     color: white;
+	letter-spacing: 2px;
 }
 span.title {
     margin-left: 15px;
@@ -135,7 +136,7 @@ span.subtitle {
     justify-content: space-around;
 }
 .iframe-container>div {
-    width: 25%;
+    width: 20%;
     height: 240px;
     position: relative;
     background-repeat: no-repeat;
@@ -156,6 +157,7 @@ span.subtitle {
 }
 .section.videos>.iframe-container>div {
     margin: 0 8.5px;
+	border: 1px solid white;
 }
 .bottom-secondary {
     position: absolute;
@@ -180,13 +182,13 @@ span.subtitle {
 .section.videos {
 	font-family: Montserrat;
     height: 240px;
-    padding: unset;
+    padding: 2px 0;
     margin-bottom: 17px;
     background-color: unset;
     overflow: scroll;
 }
 .section.videos .iframe-container {
-    width: 100%;
+    width: 260% !important;
     justify-content: left;
 }
 .section.videos .iframe-container iframe {
